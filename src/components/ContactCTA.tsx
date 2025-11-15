@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export const ContactCTA = () => {
@@ -17,45 +14,8 @@ export const ContactCTA = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <div className="bg-card border border-border rounded-2xl p-8 shadow-metallic">
-              <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
-              <form className="space-y-4">
-                <div>
-                  <Input 
-                    placeholder="Your Name" 
-                    className="bg-background border-border"
-                  />
-                </div>
-                <div>
-                  <Input 
-                    type="email" 
-                    placeholder="Email Address" 
-                    className="bg-background border-border"
-                  />
-                </div>
-                <div>
-                  <Input 
-                    type="tel" 
-                    placeholder="Phone Number" 
-                    className="bg-background border-border"
-                  />
-                </div>
-                <div>
-                  <Textarea 
-                    placeholder="Tell us about your project..." 
-                    className="bg-background border-border min-h-32"
-                  />
-                </div>
-                <Button className="w-full bg-gradient-accent hover:shadow-glow transition-all duration-300">
-                  Request Quote
-                </Button>
-              </form>
-            </div>
-
-            {/* Contact Information */}
-            <div className="space-y-8">
+          <div className="max-w-2xl mx-auto">
+            <div className="space-y-8 bg-card border border-border rounded-2xl p-8 shadow-metallic">
               <div>
                 <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
                 <p className="text-muted-foreground mb-8">
@@ -116,9 +76,9 @@ export const ContactCTA = () => {
                 </div>
               </div>
             </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
     </section>
   );
 };
