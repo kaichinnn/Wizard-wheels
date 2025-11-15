@@ -11,7 +11,7 @@ const benefits = [
 
 export const WhyChooseUs = () => {
   return (
-    <section className="py-24 bg-carbon">
+    <section id="about" className="py-24 bg-carbon">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
